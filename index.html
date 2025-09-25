@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hehe</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff; /* black background */
+    }
+    img {
+      max-width: 300px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace image.jpg with your prank image -->
+  <img id="prankImg" src="face.png" alt="Click me">
+
+  <audio id="player" loop>
+    <source src="UNGOL PRANK SOUND - WALA AKONG MAISIP NA PANGALAN (youtube).mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const img = document.getElementById("prankImg");
+    const player = document.getElementById("player");
+
+    img.addEventListener("click", () => {
+      player.play();
+    });
+  </script>
+</body>
+</html>
